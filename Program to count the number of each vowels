@@ -1,0 +1,8 @@
+vowels = 'aeiou'
+text = ('Hello, have you seen the new movie')
+words=text.casefold()
+count = {}.fromkeys(vowels,0)
+for char in words:
+    if char in count:
+        count[char] += 1
+print(count)
